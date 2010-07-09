@@ -1,0 +1,13 @@
+<script>
+chrome.extension.onRequest.addListener(function requested(data, sender, callback){
+	var xhr = new XMLHttpRequest();
+	xhr.open("POST", "http://run-this.appspot.com/runthis", false);
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	console.info("Sending:", data);
+	xhr.send(data);
+	if (xhr.statusText !== "OK") {
+		console.warn(xhr.statusText, xhr.responseText);
+	}
+	callback(xhr.responseText);
+});
+</script>

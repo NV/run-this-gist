@@ -1,0 +1,30 @@
+#files .actions .run-this-gist {
+	margin-left: 2em;
+}
+
+#files .run-this-gist-result {
+	padding: 1em .5em .5em;
+	border-top: 1px solid #DDD;
+}
+#files .run-this-gist-result pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+}
+#files .run-this-gist-result td {
+	vertical-align: top;
+}
+#files .run-this-gist-result th {
+	vertical-align: top;
+	text-align: right;
+	padding-right: .4em;
+}
+
+#files .run-this-gist-error {
+	color: #f66;
+	background: #111;
+	border: 1px solid #600;
+}
+#files .run-this-gist-error a {
+	color: inherit;
+	text-decoration: underline;
+}

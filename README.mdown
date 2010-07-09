@@ -1,0 +1,19 @@
+Run This Gist
+=============
+
+![It's buggy!](http://nv.github.com/run-this-gist/screenshots/stderr.png)
+
+
+How to install
+--------------
+
+1. `git clone git://github.com/NV/run-this-gist.git`
+    
+2. In Google Chrome open `chrome://extensions/` 
+
+3. Toggle Developer mode
+
+4. Click "Load unpacked extension..." and select "run-this-gist/chrome" directory
+
+5. Open <http://gist.github.com/469163>, click "Run" button, and see how it shows you STDERR instead of "Hello World!"
+

@@ -1,0 +1,17 @@
+{
+	"name": "Run This Gist",
+	"version": "0.2",
+	"description": "Run code from gist.github.com within your browser.",
+	"content_scripts": [
+		{
+			"matches": ["http://gist.github.com/*", "https://gist.github.com/*"],
+			"js": ["run_this_gist.js"],
+			"css": ["run_this_gist.css"]
+		}
+	],
+	"background_page" : "background.html",
+	"permissions": [
+		"http://run-this.appspot.com/runthis"
+	],
+	"update_url": "http://clients2.google.com/service/update2/crx"
+}
